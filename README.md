@@ -40,8 +40,13 @@ Endpoints
 List and describe the main API endpoints provided by your application.
 
 /api/auth/register: Register a new user.
+
 /api/auth/login: Authenticate and receive a JWT token.
+
 /api/test/all: Public access endpoint.
+
 /api/test/user: Requires user authentication.
+
 /api/test/mod: Requires moderator role.
+
 /api/test/admin: Requires admin role.
