@@ -48,7 +48,10 @@ curl --location 'http://localhost:8085/oauth/token' \
 --data-urlencode 'username=emsapi' \
 --data-urlencode 'grant_type=password'
 ```
-
+## Search Hospitals:
+```curl --location 'http://localhost:8085/api/hosp/search' \
+--header 'Authorization: Bearer 6443acd6-69d9-48e7-be24-b82fd502a890'
+```
 
 # My Hospital Information System
 A Spring Boot application for managing hospital records. This application provides RESTful APIs to create, retrieve, update, and delete hospital records using OAuth2 for authentication.
