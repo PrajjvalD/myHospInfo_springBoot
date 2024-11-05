@@ -1,10 +1,9 @@
 package com.myhospinfos.modal;
 
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
+import javax.persistence.*;
+import javax.validation.constraints.*;
+import com.fasterxml.jackson.annotation.*;
 
 @Entity
 public class HospInfoDtl {

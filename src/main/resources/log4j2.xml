@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+        </Console>
+        <File name="File" fileName="D:/logs/hosp_app.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <!-- Set Root level to 'info' so Console gets info, warn, and error logs -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+
+        <!-- Set custom package logger to 'info' to capture info and error logs in the file -->
+        <Logger name="com.myhospinfos" level="info" additivity="false">
+            <AppenderRef ref="File"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+    </Loggers>
+</Configuration>
