@@ -5,9 +5,9 @@ import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
-import jakarta.persistence.*;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotBlank;
+import javax.persistence.*;
+import javax.validation.Valid;
+import javax.validation.constraints.*;
 
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "hospId")
 @Entity

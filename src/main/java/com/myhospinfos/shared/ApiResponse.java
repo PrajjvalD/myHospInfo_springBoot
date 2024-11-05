@@ -1,38 +1,60 @@
 package com.myhospinfos.shared;
 
 public class ApiResponse<T> {
-	private int status;
-	private T data;
+    
+    private int status;
+    private String message;
+    private T data;
+    private String error;
 
-	public ApiResponse(int status, T data) {
-		super();
-		this.status = status;
-		this.data = data;
-	}
+    public ApiResponse() {}
 
-	public ApiResponse() {
-		super();
-	}
+    public ApiResponse(int status, String message, T data, String error) {
+        this.status = status;
+        this.message = message;
+        this.data = data;
+        this.error = error;
+    }
 
-	public int getStatus() {
-		return status;
-	}
+    public int getStatus() {
+        return status;
+    }
 
-	public void setStatus(int status) {
-		this.status = status;
-	}
+    public void setStatus(int status) {
+        this.status = status;
+    }
 
-	public T getData() {
-		return data;
-	}
+    public String getMessage() {
+        return message;
+    }
 
-	public void setData(T data) {
-		this.data = data;
-	}
+    public void setMessage(String message) {
+        this.message = message;
+    }
 
-	@Override
-	public String toString() {
-		return "ApiResponse [status=" + status + ", data=" + data + "]";
-	}
+    public T getData() {
+        return data;
+    }
 
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    public String getError() {
+        return error;
+    }
+
+    public void setError(String error) {
+        this.error = error;
+    }
+
+    @Override
+    public String toString() {
+        return "ApiResponse{" +
+                "status=" + status +
+                ", message='" + message + '\'' +
+                ", data=" + data +
+                ", error='" + error + '\'' +
+                '}';
+    }
 }
