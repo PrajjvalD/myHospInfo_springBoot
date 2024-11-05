@@ -28,7 +28,7 @@ This application manages hospital records by providing a set of RESTful APIs. Fo
    git clone https://github.com/yourusername/myHospInfo_springBoot.git
 
 
-**## API Documentation**
+## API Documentation
 
 Swagger UI is available for API documentation at:
 
