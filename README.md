@@ -26,7 +26,7 @@ This application manages hospital records by providing a set of RESTful APIs. Fo
 **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/myHospInfo_springBoot.git
-
+   ```
 
 ## API Documentation
 
@@ -47,7 +47,7 @@ curl --location 'http://localhost:8085/oauth/token' \
 --data-urlencode 'password=E@pi$123' \
 --data-urlencode 'username=emsapi' \
 --data-urlencode 'grant_type=password'
-
+```
 
 
 # My Hospital Information System
