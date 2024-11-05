@@ -49,7 +49,8 @@ curl --location 'http://localhost:8085/oauth/token' \
 --data-urlencode 'grant_type=password'
 ```
 ## Search Hospitals:
-```curl --location 'http://localhost:8085/api/hosp/search' \
+```bash
+curl --location 'http://localhost:8085/api/hosp/search' \
 --header 'Authorization: Bearer 6443acd6-69d9-48e7-be24-b82fd502a890'
 ```
 
