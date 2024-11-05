@@ -23,7 +23,37 @@ This application manages hospital records by providing a set of RESTful APIs. Fo
 
 ### Installation
 
-1. **Clone the repository**:
+**Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/myHospInfo_springBoot.git
+
+
+**## API Documentation**
+
+Swagger UI is available for API documentation at:
+
+[Swagger UI](http://localhost:8085/swagger-ui.html)
+
+## API Usage
+
+### Authentication
+
+This application uses OAuth2 for authentication. To generate an access token, use the following curl command:
+
+```bash
+curl --location 'http://localhost:8085/oauth/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic QUVNUyBBUFBMSUNBVElPTjplbXNAc3RhckhlYWx0aDEyMw==' \
+--data-urlencode 'password=E@pi$123' \
+--data-urlencode 'username=emsapi' \
+--data-urlencode 'grant_type=password'
+
+
+
+# My Hospital Information System
+A Spring Boot application for managing hospital records. This application provides RESTful APIs to create, retrieve, update, and delete hospital records using OAuth2 for authentication.
+
+
+
+
 
